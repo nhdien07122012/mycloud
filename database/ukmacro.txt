@@ -1,0 +1,14 @@
+﻿;DO NOT DELETE THIS LINE*** version=1 ***
+.ship:Diễn Nguyễn - 0399962032 - 575 Nguyễn Trung Trực, An Hòa, Rạch Giá, Kiên Giang
+a:anh
+c:chị
+cccd:091095010664
+dc:được
+e:em
+k:không
+ng:người 
+ok:Okie 
+oki:Okie 
+r:rồi
+stk:VIETCOMBANK - 0111000358998
+trc:trước

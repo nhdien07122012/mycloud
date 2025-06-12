@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MY FILES</title>
     <!-- Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -13,34 +14,42 @@
             padding: 0;
         }
         .container {
+            width: 90%;
             max-width: 650px;
-            margin: 40px auto;
+            margin: 20px auto;
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            padding: 32px 28px 24px 28px;
+            padding: 24px;
         }
         h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #1976d2;
             margin-bottom: 8px;
             letter-spacing: 1px;
+            text-align: center;
         }
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 400;
             color: #333;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 16px;
+            margin-top: 8px;
+            min-width: 500px;
         }
         th, td {
-            padding: 12px 10px;
+            padding: 12px 8px;
             text-align: left;
+            font-size: 0.95rem;
         }
         th {
             background: #1976d2;
@@ -61,12 +70,19 @@
         a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 700px) {
-            .container {
-                padding: 16px 4px;
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
             }
-            table, th, td {
-                font-size: 0.95rem;
+            h2 {
+                font-size: 1rem;
+            }
+            th, td {
+                padding: 10px 6px;
+                font-size: 0.85rem;
+            }
+            .container {
+                padding: 16px;
             }
         }
     </style>
@@ -75,57 +91,53 @@
     <div class="container">
         <h1>MY FILES</h1>
         <h2>Danh sách file trong thư mục database:</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Tên file</th>
-                    <th>Ngày cập nhật</th>
-                    <th>Tải xuống</th>
-                </tr>
-            </thead>
-            <tbody>
-
-
-                <!-- Thêm các file khác tại đây, điền ngày cập nhật thủ công -->
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên file</th>
+                        <th>Ngày cập nhật</th>
+                        <th>Tải xuống</th>
+                    </tr>
+                </thead>
+                <tbody>
                     
-
-
-                <tr>
-                    <td>bookmarks_12_06_2025.html</td>
-                    <td>2025-06-12 10:47</td>
-                    <td><a href="database/bookmarks_12_06_2025.html" download>Tải về</a></td>
-                </tr>
-                <tr>
-                    <td>Fliqlo.scr</td>
-                    <td>2021-03-06 18:45</td>
-                    <td><a href="database/Fliqlo.scr" download>Tải về</a></td>
-                </tr>
-                <tr>
-                    <td>gen.php.jpeg</td>
-                    <td>2025-06-09 14:55</td>
-                    <td><a href="database/gen.php.jpeg" download>Tải về</a></td>
-                </tr>
-                <tr>
-                    <td>me 2025.png</td>
-                    <td>2025-06-02 22:11</td>
-                    <td><a href="database/me 2025.png" download>Tải về</a></td>
-                </tr>
-
-                <!-- Thêm các file khác tại đây, điền ngày cập nhật thủ công -->
-
-
-
-
-
-
+                    
+                    
+                    <tr>
+                        <td>bookmarks_12_06_2025.html</td>
+                        <td>2025-06-12 10:47</td>
+                        <td><a href="database/bookmarks_12_06_2025.html" download>Tải về</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fliqlo.scr</td>
+                        <td>2021-03-06 18:45</td>
+                        <td><a href="database/Fliqlo.scr" download>Tải về</a></td>
+                    </tr>
+                    <tr>
+                        <td>gen.php.jpeg</td>
+                        <td>2025-06-09 14:55</td>
+                        <td><a href="database/gen.php.jpeg" download>Tải về</a></td>
+                    </tr>
+                    <tr>
+                        <td>me 2025.png</td>
+                        <td>2025-06-02 22:11</td>
+                        <td><a href="database/me 2025.png" download>Tải về</a></td>
+                    </tr>
+                    <tr>
+                        <td>ukmacro.txt</td>
+                        <td>2025-06-12 13:50</td>
+                        <td><a href="database/ukmacro.txt" download>Tải về</a></td>
+                    </tr>
 
 
 
 
-
-
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
+
+
