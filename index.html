@@ -64,28 +64,11 @@
     <div class="container">
         <h1>MY FILES: </h1>
         <h2>Danh sách file trong thư mục database:</h2>
-        <ul id="file-list"></ul>
+        <ul id="file-list">
+            <li><a href="database/465563.jpg" download>465563.jpg</a></li>
+            <li><a href="database/braden-jarvis-prSogOoFmkw-unsplash.jpg" download>braden-jarvis-prSogOoFmkw-unsplash.jpg</a></li>
+            <!-- Thêm các file khác tại đây -->
+        </ul>
     </div>
-    <script>
-        fetch('/list-files')
-            .then(res => res.json())
-            .then(files => {
-                const ul = document.getElementById('file-list');
-                files.forEach(file => {
-                    const li = document.createElement('li');
-                    const a = document.createElement('a');
-                    a.textContent = file;
-                    a.href = `/download/${encodeURIComponent(file)}`;
-                    a.style.textDecoration = 'none';
-                    a.style.color = '#1976d2';
-                    a.setAttribute('download', file);
-                    li.appendChild(a);
-                    ul.appendChild(li);
-                });
-            })
-            .catch(err => {
-                document.getElementById('file-list').innerHTML = 'Không thể tải danh sách file.';
-            });
-    </script>
 </body>
 </html>
